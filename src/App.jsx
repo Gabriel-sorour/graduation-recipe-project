@@ -1,37 +1,26 @@
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
+import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
+import Landing from './pages/Landing.jsx'
 import './App.css'
 
-function Header() {
-  return (
-    <header className='app-header container'>
-      <h1>Welcome to the App</h1>
-    </header>
-  )
-}
-
-function MainContent() {
-  return (
-    <main className='app-main container'>
-      <p>This is the main content area.</p>
-    </main>
-  )
-}
-
-function Footer() {
-  return (
-    <footer className='app-footer container'>
-      <p>© 2024 My App</p>
-    </footer>
-  )
-}
 
 function App() {
 
   return (
-    <div className=''>
-      <Header />
-      <MainContent />
-      <Footer />
-    </div>
+    <Router>
+      <div className='app-layout'>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Landing />} />
+          <Route path='/Home' element={<Home />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 

@@ -9,6 +9,12 @@ body,
   font-family: Arial, sans-serif;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 p {
   margin: 0;
 }

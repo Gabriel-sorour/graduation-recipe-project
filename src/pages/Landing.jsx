@@ -1,3 +1,5 @@
+import '../styles/Landing.css'
+
 function Landing() {
   return (
     <div className="landing-page container">

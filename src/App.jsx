@@ -10,15 +10,15 @@ import './App.css'
 function App() {
 
   return (
-      <div className='app-layout'>
-        <Header />
-        <Routes>
-          <Route path='/' element={<Landing />} />
-          <Route path='/Home' element={<Home />} />
-          <Route path='/about' element={<About />} />
-        </Routes>
-        <Footer />
-      </div>
+    <div className='app-layout'>
+      <Header />
+      <Routes>
+        <Route index element={<Landing />} />
+        <Route path='Home' element={<Home />} />
+        <Route path='about' element={<About />} />
+      </Routes>
+      <Footer />
+    </div>
   )
 }
 

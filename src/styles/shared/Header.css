@@ -20,3 +20,7 @@
 .app-header ul li span {
   color: rgb(85, 202, 163);
 }
+
+.active {
+  text-decoration: underline;
+}

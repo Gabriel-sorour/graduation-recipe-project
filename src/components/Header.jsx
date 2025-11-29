@@ -1,15 +1,15 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import '../styles/shared/Header.css'
 
 function Header() {
   return (
     <header className='app-header container'>
       <ul className='nav-links'>
-        <Link to="/"><li>
+        <NavLink to="/"><li>
           <span>COOK</span>WHAT<span>U</span>HAVE
-        </li></Link>
-        <Link to="/Home"><li>Home</li></Link>
-        <Link to="/about"><li>About</li></Link>
+        </li></NavLink>
+        <NavLink to="/Home"><li>Home</li></NavLink>
+        <NavLink to="/about"><li>About</li></NavLink>
       </ul>
     </header>
   )

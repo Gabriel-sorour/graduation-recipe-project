@@ -4,6 +4,7 @@ function LandingPage() {
   return (
     <>
       <title>Landing</title>
+      <link rel="icon" type="image/svg+xml" href="icon.png" />
 
       <div className="landing-page container">
         <h1>Welcome to the Landing Page</h1>

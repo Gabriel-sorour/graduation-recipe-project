@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
-import Home from './pages/Home.jsx'
-import About from './pages/About.jsx'
-import Landing from './pages/Landing.jsx'
+import HomePage from './pages/HomePage.jsx'
+import AboutPage from './pages/AboutPage.jsx'
+import LandingPage from './pages/LandingPage.jsx'
 import './App.css'
 
 
@@ -13,9 +13,9 @@ function App() {
     <div className='app-layout'>
       <Header />
       <Routes>
-        <Route index element={<Landing />} />
-        <Route path='Home' element={<Home />} />
-        <Route path='about' element={<About />} />
+        <Route index element={<LandingPage />} />
+        <Route path='Home' element={<HomePage />} />
+        <Route path='about' element={<AboutPage />} />
       </Routes>
       <Footer />
     </div>

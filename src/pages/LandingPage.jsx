@@ -1,6 +1,6 @@
 import '../styles/Landing.css'
 
-function Landing() {
+function LandingPage() {
   return (
     <div className="landing-page container">
       <h1>Welcome to the Landing Page</h1>
@@ -9,4 +9,4 @@ function Landing() {
   )
 }
 
-export default Landing
+export default LandingPage

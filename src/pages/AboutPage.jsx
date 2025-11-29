@@ -1,6 +1,6 @@
 
 
-function About() {
+function AboutPage() {
   return (
     <div className="container">
       <h2>About Page</h2>
@@ -9,4 +9,4 @@ function About() {
   )
 }
 
-export default About
+export default AboutPage
